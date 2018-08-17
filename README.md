@@ -6,6 +6,7 @@ composer require fmelchor/perfiles
 
 php artisan vendor:publish --tag=migrations
 
+
 agregar el service provider en config app.php providers
 fmelchor\perfiles\CreatePerfilesProvider::class
 
