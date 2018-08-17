@@ -1,0 +1,12 @@
+{
+    "name": "fmelchor/perfiles",
+    "description": "modulo para crear perfiles",
+    "authors": [
+        {
+            "name": "hugo melchor",
+            "email": "melchor241@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
