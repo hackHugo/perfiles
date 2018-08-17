@@ -4,11 +4,10 @@ paquete para manejar perfiles en una aplicacion laravel
 para instalar el paquete
 composer require fmelchor/perfiles
 
-php artisan vendor:publish --tag=migrations
-
-
 agregar el service provider en config app.php providers
 fmelchor\perfiles\CreatePerfilesProvider::class
+
+php artisan vendor:publish --tag=migrations
 
 correr las migraciones 
 generar un modulo y sus operaciones en c_modulo tabla y c_operation tabla
