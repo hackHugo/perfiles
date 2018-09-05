@@ -1,4 +1,4 @@
-# profile
+# Profile
 paquete para manejar perfiles en una aplicacion laravel
 
 ## 1. Para instalar el paquete
