@@ -6,7 +6,7 @@ paquete para manejar perfiles en una aplicacion laravel
 composer require fmelchor/perfiles
 ```
 ## 2. Agregar el service provider en config app.php providers
-```
+```PHP
 fmelchor\perfiles\CreatePerfilesProvider::class
 ```
 ## 3. Ejecuta el comando
