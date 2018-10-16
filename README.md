@@ -18,5 +18,5 @@ php artisan vendor:publish --tag=migrations
 php artisan migrate
 ```
 ## 5. Generar un modulo y sus operaciones en c_modulo tabla y c_operation tabla
- en tu ruta http://misite.com/profile se ejecutara el modulo
+ en tu ruta http://mysite.com/profile se ejecutara el modulo
 
