@@ -1,7 +1,5 @@
 <?php
-
 namespace fmelchor\perfiles;
-
 use Illuminate\Support\ServiceProvider;
 
 class CreatePerfilesProvider extends ServiceProvider
