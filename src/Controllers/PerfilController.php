@@ -19,7 +19,7 @@ class PerfilController extends Controller
 {
     public function index()
     {
-        $oProfiles = Cprofile::where('id_status',1)->paginate(10);
+        $oProfiles = Cprofile::paginate(10);
         return  view('profiles::index',array('oProfiles'=>$oProfiles));
     }
 

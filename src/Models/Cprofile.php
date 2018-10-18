@@ -15,7 +15,7 @@ class Cprofile extends Model
 {
 
 
-    protected $table = 'profile';
+    protected $table = 'c_profile';
 
 
 }
