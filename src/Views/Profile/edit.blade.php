@@ -23,7 +23,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <form id="formEdit" action="{{url('profile')}}/{{$profile->id}}" >
+                                    <form id="formEdit" action="{{url('perfiles')}}/{{$profile->id}}" >
                                         @include('profiles::partials.form')
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-lg btn-info textBig btnchange">Editar
@@ -51,11 +51,11 @@
             var data =  $( this ).serialize();
             $.ajax( {
                 type: "PUT",
-                url: '{{url('profile')}}/{{$profile->id}}',
+                url: '{{url('perfiles')}}/{{$profile->id}}',
                 data: data,
                 success: function( response ) {
                     console.log( response );
-                    document.location.href = '{{url('profile')}}';
+                    document.location.href = '{{url('perfiles')}}';
                 },
                 error: function (data) {
                     console.log(data);

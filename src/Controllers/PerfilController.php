@@ -45,7 +45,6 @@ class PerfilController extends Controller
     {
         $oPerfil = new Cprofile();
         $oPerfil->name = $request->name;
-        $oPerfil->id_status = 1;
         $oPerfil->save();
         CprofileOperation::where('id_profile', '=', $oPerfil->id)->delete();
         if($request->idOperation != null) {
@@ -57,7 +56,7 @@ class PerfilController extends Controller
             }
         }
         Session::flash('message', 'Tus datos fueron insertados correctamente');
-        return Redirect::route('profile.index');
+        return Redirect::route('perfiles.index');
     }
 
     /**
@@ -147,8 +146,8 @@ class PerfilController extends Controller
     public function destroy(Request $request, $id)
     {
         $perfil = Cprofile::find($id);
-        $perfil->id_status = 3;
-        $perfil->save();
+        CprofileOperation::where('id_profile', '=', $perfil->id)->delete();
+        $perfil->delete();
         $mesage = 'El perfil '.$perfil->name.' fue eliminado';
         if ($request->ajax()) {
             return $mesage;

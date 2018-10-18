@@ -1,2 +1,2 @@
 <?php
-Route::resource('profile','fmelchor\perfiles\Controllers\PerfilController');
+Route::resource('perfiles','fmelchor\perfiles\Controllers\PerfilController');

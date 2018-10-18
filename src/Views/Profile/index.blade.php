@@ -13,12 +13,12 @@
         <div class="col-12">
             <div class="card" style="margin-top: 20px;">
                 <div class="card-header">
-                    Profile
+                    Perfiles
                 </div>
                 <div class="card-body">
                     <div class="">
                         <div class="btn-group">
-                            <a href="{{ url('profile/create')}}" class="btn btn-info" >Crear</a>
+                            <a href="{{ url('perfiles/create')}}" class="btn btn-info" >Crear</a>
                         </div>
                     </div>
                     <div class="table-container" style="margin-top: 10px;">
@@ -35,7 +35,7 @@
                                         <td style="text-align: center;">{{$item->id}}</td>
                                         <td style="text-align: center;">{{$item->name}}</td>
                                         <td style="text-align: center;">
-                                            <a class="btn btn-primary btn-xs" href="{{url('profile/'.$item->id.'/edit')}}" ><span class="glyphicon glyphicon-pencil">Editar</span></a>
+                                            <a class="btn btn-primary btn-xs" href="{{url('perfiles/'.$item->id.'/edit')}}" ><span class="glyphicon glyphicon-pencil">Editar</span></a>
                                             <button class="btn btn-danger btn-xs" type="submit" onclick="jsEliminaArticulo({{$item->id}},'{{$item->name}}')"><span class="glyphicon glyphicon-trash">Eliminar</span></button>
                                         </td>
                                     </tr>
@@ -60,7 +60,7 @@
     <script>
         function jsEliminaArticulo(id,nombre) {
             if (confirm("¿Estas seguro de eliminar el perfil " + nombre + " ?")) {
-                var url = '{{url('profile')}}'+'/'+id;
+                var url = '{{url('perfiles')}}'+'/'+id;
                 $.ajax({
                     method: "DELETE",
                     url: url

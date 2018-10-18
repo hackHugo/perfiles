@@ -23,7 +23,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <form action="{{url('profile')}}" method="POST">
+                                    <form action="{{url('perfiles')}}" method="POST">
                                     @include('profiles::partials.form')
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-lg btn-info textBig btnchange">
